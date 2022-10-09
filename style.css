@@ -1,0 +1,124 @@
+@font-face {
+    font-family: VarelaRound;
+    src: url('./fonts/VarelaRound-Regular.ttf');
+}
+
+body {
+    font-family: 'VarelaRound', sans-serif;
+    padding: 20px 0px 50px 0px;
+    background-color: #edf0fa;
+    text-align: center;
+}
+
+form {
+    height: 135px;
+    width: 70%;
+    background-color: #cab1b1;
+    border-radius: 10px;
+    padding: 20px;
+    margin: auto;
+}
+
+input {
+    width: 80%;
+    margin: auto;
+    height: 40px;
+    border: 0px;
+    border-radius: 5px;
+    text-indent: 20px;
+    font-size: small;
+    font-weight: 500;
+    font-family: inherit;
+}
+
+input:focus {
+    outline: solid #e3cfe9;
+}
+
+.title {
+    margin-bottom: 10px;
+}
+
+.link {
+    margin: 0px 0px 10px 13px;
+}
+
+.button {
+    width: 25%;
+    margin: auto;
+    margin-bottom: 20px;
+    background-color: #d4cc9d;
+    border: none;
+    border-radius: 8px;
+    font-size: 1, 2em;
+    font-family: inherit;
+    padding: 10px;
+    min-height: fit-content;
+    cursor: pointer;
+}
+
+.block_1 {
+    margin-top: 50px;
+}
+
+.to_read li, .read li {
+    width: 60%;
+    margin: auto;
+    margin-top: 20px;
+    padding-top: 20px;
+    min-height: 40px;
+    font-weight: 500;
+    line-height: 22px;
+    background-color: #726d6d;
+    list-style: none;
+    border-radius: 5px;
+    display: block;
+}
+
+@media screen and (max-width:465px) {
+    form {
+        height: 230px;
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .title {
+        width: 95%;
+    }
+
+    .link {
+        width: 100%;
+        margin: 10px 0px 10px 0px;
+    }
+
+    .button {
+        margin-top: 20px;
+    }
+
+    input {
+        margin-top: 10px;
+    }
+}
+
+li i {
+    float: right;
+    margin: 10px;
+}
+
+li i:hover {
+    animation-name: rotation;
+    animation-duration: 2s;
+    cursor: pointer;
+}
+
+@keyframes rotation {
+    0%{transform: rotate(20deg)}
+    100%{transform: rotate(100deg)}
+}
+
+#title_1 ,#title_2 {
+    visibility: hidden;
+}
